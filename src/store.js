@@ -4,9 +4,12 @@ import rootReducer from './reducers';
 import createLogger from 'redux-logger';
 
 const initialState = {
-    
-    test: {
-        value: true
+    counter: {
+        value: 0,
+        adult:0,
+        children:0,
+        infant:0,
+        error:false
     }
 };
 
