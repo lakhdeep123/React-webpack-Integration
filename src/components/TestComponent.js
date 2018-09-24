@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { adultIncrement ,adultDecrement,checkError } from '../actions/counterAction';
+import { adultIncrement ,adultDecrement } from '../actions/counterAction';
 import { connect } from 'react-redux';
 var that;
 class TestComponent extends Component {
@@ -88,8 +88,8 @@ const mapStateToProps = (state) => {
 
 const mapActionsToProps = {
     adultIncrement,
-    adultDecrement,
-    checkError
+    adultDecrement
+  
 }
   
 export default connect(mapStateToProps, mapActionsToProps)(TestComponent);
